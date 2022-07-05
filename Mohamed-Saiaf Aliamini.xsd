@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.0" vc:maxVersion="1.1"> </xs:schema>
+
+<xsd:element name="cours">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="cours">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="titre" type="xsd:string" />
+                        <xsd:element name="unite_enseignement" type="xsd:string" />
+                        <xsd:element name="charge_de_travail">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name="coefficient" type="xsd:integer"/>
+                                    <xsd:element name="credits" type="xsd:integer"/>
+                                    <xsd:element name="nombre_heur" type="xsd:integer" />
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                        <xsd:element name="semestre" type="xsd:string" />
+                        <xsd:element name="niveau" type="xsd:string" />
+                        <xsd:element name="prerequis" type="xsd:string" />
+                        
+                        
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            
+            <xsd:element name="enseignants" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="prenom" type="xsd:string"/>
+                        <xsd:element name="nom" type="xsd:string"/>
+                        <xsd:element name="adresse_bureau" type="xsd:string"/>
+                        <xsd:element name="email" type="xsd:string"/>
+                        <xsd:element name="heuresBu" type="xsd:string"/>
+                        
+                    </xsd:sequence>
+                    <xsd:attribute name="nombre_enseignants" type="xsd:integer" />                                                        
+                </xsd:complexType>
+                
+            </xsd:element>
+            <xsd:element name="lieu_heur" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="salle" type="xsd:string"/>
+                        <xsd:element name="volume_horraire" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+                
+                
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>

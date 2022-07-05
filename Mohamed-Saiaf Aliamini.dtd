@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT cours (cour*)>
+<!ELEMENT cour (description*, enseignant, séance*)>
+<!ELEMENT enseignant (nom, prenom, email, adresse_bureau, heuresBu)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT seance (#PCDATA)>
+<!ATTLIST enseigant prénom CDATA #REQUIRED
+                   nom    CDATA #REQUIRED
+                   email CDATA #IMPLIED
+                   adresse_bureau CDATA #IMPLIED
+                   heuresBu CDATA #IMPLIED >
+                   
+<!ATTLIST coeficient CDATA #FIXED "2" credits CDATA #FIXED volume_horaire CDATA #FIXED "30")
+<!ATTLIST seance date  CDATA #REQUIRED
+                 lieu  CDATA #REQUIRED
+                 nobreh CDATA #REQUIRED>
+<!ATTLIST cour id  CDATA #REQUIRED>
+

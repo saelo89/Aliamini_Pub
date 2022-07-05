@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE EXERCICE SYSTEM "EXERCICE.dtd">
+<cours>
+    <cour id="c1" titre="Cryptographie">
+        <description>
+            <unite_enseignement>
+                <titre>Systèmes et Sécurité</titre>
+            </unite_enseignement>
+            <charge_travail coefficient="2" credits="6" volume_horaire="30"/>
+            <semestre designation="1" />
+            <niveau designation="5"/>
+            <prerequis>
+                <Preq1> Avoir des bonnes bases en pytgon </Preq1>
+                <Preq2> Avoir des bases en Linux </Preq2>
+                <Preq3> Avoir des bonnes bases en securité des SI </Preq3>
+                <Preq4> Avoir des bonnes base en Réseau </Preq4>
+            </prerequis>
+            
+        </description>
+        <enseignant>
+            <nombreEns nombre="20"/>
+            <nom> Dr MBOUP </nom>
+            <prenom> El Hadji</prenom>
+            <adresse_bureau> UFR SET Bureau Numero 3 </adresse_bureau>
+            <email> elhadji_mboup@univ-thies.sn </email>
+            <heuresBu nobreB="20"/>
+               
+        </enseignant>
+           
+        
+        <séance no="1" date="20/03/2022" lieu="Salle 5" nbreh="4">Intrduction à la cryptographie</séance>
+        <séance no="2" date="01/04/2022" lieu="Salle 5" nbreh="4">les algorithmes cryptographiques</séance>
+        
+    </cour>
+    
+    <cour id="c2" titre="Droit des TICs">
+        <description>
+            <unite_enseignement>
+                <titre>Humanités et entreprises</titre>
+            </unite_enseignement>
+            <charge_travail coefficient="2" credits="6" volume_horaire="20"/>
+            <semestre designation="1" />
+            <niveau designation="4"/>
+            <prerequis>
+                <Preq1> avoir des notions de droit penal </Preq1>
+                <Preq2> etre assidut </Preq2>
+                
+            </prerequis>
+            
+        </description>
+        <enseignant>
+            <nombreEns nombre="10"/>
+            <nom> Dr Pierre  </nom>
+            <prenom>Marc NDIAYE</prenom>
+            <adresse_bureau> UFR SET Bureau Numero 4 </adresse_bureau>
+            <email> marcndiaye@univ-thies.sn </email>
+            <heuresBu nobreB="17"/>
+            
+        </enseignant>
+        
+        <séance no="1" date="20/05/2022" lieu="Salle 5" nbreh="4">Intrduction au droit penal</séance>
+        <séance no="2" date="01/04/2022" lieu="Salle 5" nbreh="4">Introduction au droit des tics</séance>
+        
+    </cour>
+   
+</cours>
